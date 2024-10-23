@@ -1,0 +1,83 @@
+<body>
+  <div class="container">
+    <h1><i class="fa-solid fa-clock"></i>Date : {{ todaydate | date :"yyyy-MM-dd"}}</h1>
+    <div class="bar">
+    <ul>
+      <li><a routerLink="/login"><i class="fa-solid fa-right-to-bracket"></i>login</a></li>
+      <li><a routerLink="#"><i class="fa-solid fa-phone"></i>Help</a></li>
+    </ul>
+  </div>
+    <div class="register">
+      <form class="form" (ngSubmit)="onSubmit()">
+        <h2>Register</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" [(ngModel)]="formdata.name" name="name" placeholder="*Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email"[(ngModel)]="formdata.email"name="email" placeholder="*Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile No:</label>
+          <input type="tel" id="mobile" [(ngModel)]="formdata.mobile" name="mobile" placeholder="*Your Mobile No" required>
+          <label for="date">Date:</label>
+          <input type="datetime-local" id="date" [(ngModel)]="formdata.date" name="date" placeholder="*Date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" [(ngModel)]="formdata.address" name="address" placeholder="*Your Address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="foodType">Food Type:</label>
+          <input type="text" id="foodType" [(ngModel)]="formdata.foodtype" name="foodtype" placeholder="*Food Type" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cushionStyle">Cushion Style:</label>
+          <input type="text" id="cushionStyle" [(ngModel)]="formdata.cushionstyle" name="cushionstyle" placeholder="*Cushion Style" required>
+        </div>
+
+        <div class="form-group">
+          <label for="favoriteFood">Favorite Food:</label>
+          <input type="text" id="favoriteFood" [(ngModel)]="formdata.fav" name="fav" placeholder="*Your Favorite" required>
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" [(ngModel)]="formdata.username" name="username" placeholder="*Username" required autocomplete="on">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" [(ngModel)]="formdata.password" name="password" placeholder="*New-Password"  autocomplete="on" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" [(ngModel)]="formdata.conform" name="confirmPassword" placeholder="*Confirm Password" required>
+        </div>
+
+        <div class="button-container">
+          <button type="submit">Submit</button>
+          <button type="button" onclick="this.form.reset()">Clear</button>
+        </div>
+
+        <div class="social-icons">
+          <a href="#" class="facebook-icon">
+            <i class="fa-brands fa-facebook" [ngStyle]="{'color': '#3d83b8', 'padding': '3px'}"></i> Facebook
+          </a>
+          <a href="#" class="instagram-icon">
+            <i class="fa-brands fa-instagram" [ngStyle]="{'color': '#f86da9', 'padding': '3px'}"></i> Instagram
+          </a>
+          <a href="#" class="twitter-icon">
+            <i class="fa-brands fa-twitter" [ngStyle]="{'color': '#1e67e6', 'padding': '3px'}"></i> Twitter
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

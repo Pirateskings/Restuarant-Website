@@ -1,0 +1,173 @@
+*{
+  font-family: "Great Vibes",cursive;
+}
+body {
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+}
+.menu-container {
+  position: relative;
+  margin: auto -10px;
+  height: 275vh;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.menu-background {
+  background: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/HD-Backgrounds-Black-1920x1080.jpg");
+  background-size: 100% 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+}
+.logo {
+  width: auto;
+  display: block;
+  color:rgba(255, 9, 9, 0.907);
+  position:absolute;
+}
+
+.logo img {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  position:relative;
+  filter: brightness(1) contrast(1.9);
+  left: 670px;
+  top: 30px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.starter{
+  display: flex; 
+  overflow: auto;
+  padding: 15px;
+  width: 96%;
+  height: 350px;
+  top: 340px;
+  overflow-y: hidden;
+  position: relative;
+
+} 
+.starter::-webkit-scrollbar{
+background: transparent;
+height:3px;
+}
+.starter:hover::-webkit-scrollbar-thumb{
+ border-radius: 100px;
+ background-color: #ffffff;
+ height: 2px;
+}
+.menu-items {
+  margin: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+  height: 290px;
+  border-top: 3px solid #ff6347;
+  border-bottom: 3px solid #ff6347;
+  position: relative;
+  padding: 2px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.star{
+  font-size: 60px;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  position: relative;
+  top: 350px;
+  left:0%;
+  padding: 10px;
+}
+.menu-items:hover {
+  transform: translateY(-10px);
+  border-left: 3px solid #ff6347;
+  border-right: 3px solid #ff6347;
+  border-top: 3px solid silver;
+  border-bottom: 3px solid silver;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.backend {
+  width: 250px;
+  height: 290px;
+  padding: 5px;
+  background-color: #000000;
+  color: #ffffff;
+  position:absolute;
+  top: 0px;
+  border: 1px solid silver;
+  z-index: 1;
+}
+.backend p{
+  font-family: "Poppins",cursive;
+}
+.backend button{
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position:absolute;
+  right: 8px;
+  font-size: 12px;
+  font-weight: 900;
+  top: 8px;
+}
+.backend button:hover{
+  background-color: red;
+}
+
+.backend.active {
+  position: relative;
+  display: block;
+}
+.backend ul li{
+  list-style: none;
+  text-align: justify;
+  font-family: "Poppins",cursive;
+  font-size: 20px;
+}
+.menu-img {
+  text-align: center;
+}
+.menu-img img {
+  width: 250px; 
+  height: 135px; 
+  object-fit:fill; 
+  cursor: grab;
+  border: 2px solid silver;
+}
+.menu-items h4{
+   font-size: 26px;
+   text-align: center;
+  
+   color: #ff9720;
+}
+a{
+  text-decoration: none;
+}
+.menu-items h5{
+  font-size: 22px;
+  position: relative;
+  text-align: center;
+  padding:5px;
+  justify-content: center;
+  transition: background 1s ease-in-out;
+}
+.menu-items h5:hover
+{
+  background: rgb(79, 78, 78);
+  color: white;
+}
+.menu-items h3{
+  font-size: 26px;
+  padding: 10px;
+  color: #333;
+  animation: animate 0.5s ease-in forwards;
+}

@@ -1,0 +1,56 @@
+<body>
+  <div class="head1">
+  <div class="container1">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d250581.02959892934!2d77.28422249201716!3d11.088869986032462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1728361304042!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact">
+      <img src="https://th.bing.com/th/id/R.b8ba3497861b268304a96183828b743b?rik=vmElbQQsifo%2bMQ&riu=http%3a%2f%2fgallery.yopriceville.com%2fvar%2falbums%2fFree-Clipart-Pictures%2fDecorative-Elements-PNG%2fEmpty_Envelope_Transparent_PNG_Clip_Art.png%3fm%3d1495318499&ehk=R3WVhyESui00EKVTFbbOcCx9XBVo6twFHyN2qT0U7h0%3d&risl=&pid=ImgRaw&r=0" alt="">
+      <div class="part">
+      
+        <h1>Conduct Details</h1>
+        <ul>
+          <li><i class="fa-solid fa-address-book"></i>Address: &nbsp;&nbsp;732/21 Second Street,
+            Manchester, King Street, &nbsp;&nbsp; &nbsp;
+            Kingston United Kingdom</li>
+          <br>
+          <li><i class="fa-solid fa-phone"></i>Phone No: 8855477674</li>
+          <br>
+          <li><i class="fa-solid fa-envelope"></i>Mail: <a href="mailto:kingoftaste2024@gmail.com">kingoftaste2024&#64;gamil.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="other">
+    <div class="get">
+      <h1>Get In Touch</h1>
+      <form name="conduct" (ngSubmit)="Oncontact()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="contact.name" placeholder="*Your Name" required>
+
+        <label for="email">Email</label><input type="email" id="email" name="email"  [(ngModel)]="contact.email" placeholder="*Your Email" required>
+
+        <label for="subject">Subject</label>
+        <select name="subject" id="subject" [(ngModel)]="contact.subject" [ngModelOptions]="{standalone:true}">
+          <option value="" disabled selected>Select Subject</option>
+          <option value="Any">Any</option>
+          <option value="Upcoming Event">Upcoming Event</option>
+          <option value="Book Table">Book Table</option>
+          <option value="Banquet">Banquet</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="phone">Phone No</label>
+        <input type="tel" id="phone" name="phone" [(ngModel)]="contact.phone" placeholder="*Phone No" required>
+
+        <label for="datetime">Date</label>
+        <input type="datetime-local" id="datetime" name="datetime"
+              [(ngModel)]="contact.date" min="2023-01-01T00:00" max="2025-12-31T23:59">
+        <textarea name="suggestion" id="sug" [(ngModel)]="contact.suggestion" placeholder="*Any Suggestion"></textarea>
+        <button type="submit">Submit</button>
+              </form>
+      <img src="https://i.pinimg.com/736x/99/dc/f1/99dcf16c1e12211d7021285abe66d1e9.jpg" alt="no image" id="open" />
+    </div>
+  </div>
+  </div>
+</body>

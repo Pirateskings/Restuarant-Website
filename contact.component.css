@@ -1,0 +1,257 @@
+body {
+  width: 100%;
+  height:auto;
+  background: black;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+iframe {
+  position: relative;
+  width: 980px;
+  height: 580px;
+  padding: 5px;
+  border: 2px solid rgb(45, 45, 241); 
+}
+.head1{
+  width:100%;
+  height: auto;
+  padding: 5px;
+  }
+.container1 {
+  position: relative;
+  padding: 10px;
+  top: 80px;
+  background: black;
+  height: auto;
+  border-bottom: 5px solid silver;
+}
+
+.map {
+  position: relative;
+  left: 0px;
+}
+
+.contact {
+  position: absolute;
+  width: 420px;
+  height: auto;
+  background: rgb(43, 41, 41);
+  transform: translateY(10px);
+  color: white;
+  right: 40px;
+  border: 2px solid white;
+  padding: 20px;
+  top:  0px;
+}
+
+.contact img {
+  width: 420px;
+  height: 400px;
+  position: absolute;
+  display: block;
+  top: 200px;
+  right: 0px;
+}
+
+.contact h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  padding: 15px;
+  text-align: center;
+}
+
+.contact li {
+  list-style: none;
+  padding: 6px;
+  text-align: justify;
+  font-size: 18px;
+  margin-left: -17px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact i {
+  padding: 0px 15px;
+}
+
+.part {
+  margin: auto;
+  width: 400px;
+  border: 2px dotted silver;
+  position: relative;
+  right: 10px;
+  height: 350px;
+  background: black;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: transform 1s ease-in, opacity 1s ease-in;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.part:hover {
+  transform: translateY(0);
+  animation: animate 3s forwards;
+  opacity: 1; 
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(135px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.other {
+  width: 100%;
+  height: 110vh;
+  margin: auto;
+  position: relative;
+  margin-top: 70px;
+  padding-top: 20px;
+  font-family: Candara;
+}
+
+.get {
+  margin: auto;
+  max-width: 100%;
+  height: 120vh;
+  padding: 15px 0px;
+  background: url('https://wallpaperaccess.com/full/276233.jpg');
+  background-size: 80% 100%;
+  background-repeat: no-repeat;
+
+}
+
+.get img {
+  position: absolute;
+  right: 5px;
+  width: 430px;
+  top: 45px;
+  height: 800px;
+  box-sizing: border-box;
+  border: 2px dashed white;
+}
+
+.get h1 {
+  position: relative;
+  left: 420px;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+form {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px silver;
+  position: absolute;
+  left: 125px;
+  z-index: 1;
+}
+
+label {
+  display: flex;
+  margin-left: 25px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0079ff;
+  padding: 8px;
+}
+
+textarea {
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  top: 25px;
+  right: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="datetime-local"],
+select,
+option,
+textarea {
+  width: 40%;
+  display: flex;
+  padding: 12px 15px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  transition: border-color 0.3s ease;
+}
+
+::placeholder {
+  color: white;
+  font-size: 18px;
+  opacity: 1;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type="submit"] {
+  display: block;
+  margin-left: 25px;
+  width: 95%;
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+select {
+  font-size: 18px;
+  padding: 12px;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%; 
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="datetime-local"],
+  select {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  ::placeholder {
+    font-size: 16px;
+  }
+
+  button[type="submit"] {
+    font-size: 16px;
+  }
+}
+}

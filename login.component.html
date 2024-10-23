@@ -1,0 +1,56 @@
+<body>
+  <div class="con">
+  <h1><i class="fa-solid fa-clock"></i>Date : {{ todaydate | date :"yyyy-MM-dd"}}</h1>
+  </div>
+  <div class="bar">
+    <ul>
+      <li><a routerLink="/home" routerActiveLink="active"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li><a routerLink="/register" routerActiveLink="active"><i class="fa-solid fa-right-to-bracket"></i>Sign Up</a></li>
+    </ul>
+  </div>
+  <div class="center">
+    <div class="center-text">
+      <h1>LOGIN FORM</h1>
+      <form name="login" (ngSubmit)="onLogin()">
+        <div class="txt-field">
+          <span></span>
+          <i class="fa-solid fa-users fa-bounce"></i>
+          <input type="text" id="username" [(ngModel)]="logindata.username" name="username" placeholder="Username"  autocomplete="on">
+        </div>
+
+        <div class="txt-field">
+          <span></span>
+          <i class="fa-solid fa-lock fa-bounce"></i>
+          <input type="password" id="password" [(ngModel)]="logindata.password" name="password"   placeholder="Password" autocomplete="on">
+        </div>
+
+        <div class="forget">
+          <label><a href="forget.html">Forgot Password?</a></label>
+        </div>
+
+        <button type="submit">
+          <i class="fa-solid fa-right-to-bracket fa-fade"></i> Login
+        </button>
+
+        <div class="signlink">
+          Not have an account? <a routerLink="/register">Click here</a>
+        </div>
+
+        <div class="icon">
+          <div class="facebook">
+            <span>
+              <i class="fa-brands fa-square-facebook fa-bounce"></i>
+              <a href="https://www.facebook.com">Facebook</a>
+            </span>
+          </div>
+          <div class="google">
+            <span>
+              <i class="fa-brands fa-google fa-bounce"></i>
+              <a href="https://www.google.com">Google</a>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>

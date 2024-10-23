@@ -1,0 +1,177 @@
+body{
+    background: url("https://wallpaperaccess.com/full/3692584.jpg");
+    background-position: cover;
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+    font-family: "Courgette", cursive;
+    background-color: white;
+}
+.container{
+    width: 1200px;
+    height: 330vh;
+    position: relative;
+    margin: 0;
+    padding: 20px;
+}
+.about{
+    padding: 15px;
+    margin: auto;
+    width: auto;
+    position: relative;
+}
+#img1{
+    width: 500px;
+    height: 650px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    border: 2px solid silver;
+    display: block;
+}
+#img2{
+    width: 300px;
+    border: 2px solid silver;
+    height: 275px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    display: block;
+}
+#img3{
+    width: 600px;
+    border: 2px solid silver;
+    height: 400px;
+    position:absolute;
+    top: 300px;
+    left: 25%;
+    display: block;
+    animation: animate 10s ease-in-out infinite;
+}
+@keyframes animate {
+    0%{
+        left:25%;
+    }
+    50%{
+        left:40%;
+    }
+    100%{
+        left: 25%;    }
+}
+.word{
+    width: 350px;
+    height: 500px;
+    margin: auto;
+    overflow:scroll;
+    font-family: "Courgette", cursive;
+    position: relative;
+    right: -50%;
+    background: rgba(0,0,0,0.3);
+    border: 2px solid silver;
+}
+::-webkit-scrollbar,::-webkit-scrollbar-track{
+    width: 5px;
+    height: 0px;
+    background-color: transparent;
+}
+:hover::-webkit-scrollbar-thumb{
+    background: rgb(114, 138, 120);
+    border-radius: 25px;
+}
+hr{
+    width: 80%;
+    height: 2px;
+    border: none;
+    background: white;
+}
+.word h1{
+    font-size: 45px;
+    text-align: center;
+    color:white;
+}
+p{
+    color: white;
+    padding: 45px;
+    margin-top: -15px;
+    text-align: justify;
+}
+.enlight{
+    position: relative;
+    width:inherit;
+    top: 300px;
+    margin-top:auto;
+    padding: 15px;
+}
+.fact{
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.enlight img{
+    margin-top: 15px;
+    width: 400px;
+    height: 500px;
+    position:absolute;
+    left: 17%;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+.enlight img:nth-child(1)
+{
+    opacity: 1;
+}
+.enlight img:hover{
+    opacity: 1;
+}
+.fact{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow-y: scroll;
+    top: 10px;
+    padding-bottom: 45px;
+    left: 850px;
+}
+.fact h1{
+    font-size: 45px;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+}
+.fact li{
+    list-style:outside;
+    text-align: justify;
+    padding: 10px 15px;
+}
+.poet
+{
+    position: relative;
+    width:120%;
+    height:600px;
+    margin-top: -25px;
+    top: 500px;
+}
+.poet img{
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    transition: opacity 0.5s ease;
+    right: 60px;
+    opacity:0;
+}
+.poet img:nth-child(1){
+    opacity:1;
+}
+.poet img:hover{
+    opacity: 1;
+}
+
+.king{
+    position: absolute;
+    display: block;
+    transform: translateY(-20px);
+    left: 140px;
+    text-align: center;
+}
+.king h1{
+    font-size: 45px;
+    transform: translateY(-20px);
+    font-family: "Great Vibes", cursive;
+}

@@ -1,0 +1,154 @@
+<body>
+      <section id="booking" class="section">
+        <h2>Booking</h2>
+        <div class="booking-container">
+          <div class="place"><a [routerLink]="[]" fragment="branches">
+            <img src="https://img.freepik.com/premium-photo/restaurant-hotel-zermatt_865967-38967.jpg" alt="Place 1">
+            <p>#Location 1: Main Branch</p></a>
+          </div>
+          <div class="place"><a [routerLink]="[]" fragment="branches">
+            <img src="https://i.pinimg.com/originals/61/bd/51/61bd5179a561b6b4c0955651f6d98138.jpg" alt="Place 2">
+            <p>#Location 2: Riverside</p></a>
+          </div>
+          <div class="place"><a [routerLink]="[]" fragment="branches">
+            <img src="https://media.timeout.com/images/105371121/image.jpg" alt="Place 3">
+            <p>#Location 3: Downtown</p></a>
+          </div>
+        </div>
+        <form class="booking-form" (ngSubmit)="onSubmit()">
+          <h3>Book a Table</h3>
+          <input type="text" placeholder="*Full Name" name="name" [(ngModel)]="page.name" required>
+          <input type="email" placeholder="*Email" name="email" [(ngModel)]="page.email" required>
+          <input type="text" placeholder="*Phone Number" name="num" [(ngModel)]="page.num" required>
+
+          <select name="event" id="event" [(ngModel)]="page.event" [ngModelOptions]="{standalone: true}">
+            <option value="any">Any</option>
+            <option value="Events">Events</option>
+            <option value="Banquets">Banquets</option>
+            <option value="Party">Party</option>
+            <option value="Others">Others</option>
+          </select>
+          
+          <input type="date" placeholder="*Booking Date" name="date" [(ngModel)]="page.date" required>
+          <textarea name="suggestion" id="sug" [(ngModel)]="page.address" placeholder="*Suggestion"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+  
+      
+      <section id="testimonials" class="section">
+        <h2>Testimonials</h2>
+        <form class="review-form" (ngSubmit)="onTestimonials()">
+            <input type="text" name="name1" placeholder="*Your Name" [(ngModel)]="test.name" required />
+            <input type="email" name="email1" placeholder="*Your Email" [(ngModel)]="test.email" required />
+            <textarea name="review" placeholder="*Your Review"[(ngModel)]="test.review" required></textarea>
+            <input type="number"  name="rating" placeholder="*Rating (1-5)" min="1" max="5" required [(ngModel)]="test.rating" />
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="https://th.bing.com/th/id/R.6436b80234acd63503052140aca4feab?rik=Efo0fjg%2f8zu1pw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fFree-cute-animal-wallpaper-HD.jpg&ehk=gpgW8380s9igd8n1IVE4YVCN64RDeqasFTjb5cRKGCo%3d&risl=&pid=ImgRaw&r=0" alt="Customer 1">
+                <p>"Amazing experience! The food and service were outstanding."</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://th.bing.com/th/id/R.6436b80234acd63503052140aca4feab?rik=Efo0fjg%2f8zu1pw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fFree-cute-animal-wallpaper-HD.jpg&ehk=gpgW8380s9igd8n1IVE4YVCN64RDeqasFTjb5cRKGCo%3d&risl=&pid=ImgRaw&r=0" alt="Customer 2">
+                <p>"Best dining experience ever. The chefs are true artists!"</p>
+                <p>- Sarah Lee</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://th.bing.com/th/id/R.6436b80234acd63503052140aca4feab?rik=Efo0fjg%2f8zu1pw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fFree-cute-animal-wallpaper-HD.jpg&ehk=gpgW8380s9igd8n1IVE4YVCN64RDeqasFTjb5cRKGCo%3d&risl=&pid=ImgRaw&r=0" alt="Customer 3">
+                <p>"Fantastic! Highly recommend for any food lover."</p>
+                <p>- Jane Smith</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://th.bing.com/th/id/R.ca7e71496017d9047a5f8513b0ee0002?rik=hrpJRzz3eGmgtg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fCute-Animal-Wallpaper-HD-desktop.jpg&ehk=0Ff%2bletUnkmWClxoSKmtGwWoBxNtGNRRJev7rfh52g8%3d&risl=&pid=ImgRaw&r=0" alt="Customer 4">
+                <p>"A culinary journey. Every dish was exquisite."</p>
+                <p>- Mike Thompson</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://th.bing.com/th/id/R.ca7e71496017d9047a5f8513b0ee0002?rik=hrpJRzz3eGmgtg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fCute-Animal-Wallpaper-HD-desktop.jpg&ehk=0Ff%2bletUnkmWClxoSKmtGwWoBxNtGNRRJev7rfh52g8%3d&risl=&pid=ImgRaw&r=0" alt="Customer 5">
+                <p>"Perfect ambiance and food. I'll be back for sure!"</p>
+                <p>- Emma Brown</p>
+            </div>
+            <div class="testimonial">
+                <img src="https://th.bing.com/th/id/R.ca7e71496017d9047a5f8513b0ee0002?rik=hrpJRzz3eGmgtg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fCute-Animal-Wallpaper-HD-desktop.jpg&ehk=0Ff%2bletUnkmWClxoSKmtGwWoBxNtGNRRJev7rfh52g8%3d&risl=&pid=ImgRaw&r=0" alt="Customer 6">
+                <p>"The best dining experience I’ve had in years!"</p>
+                <p>- Olivia Wilson</p>
+            </div>
+        </div>
+    </section>
+    
+  
+    
+    <section id="our-team" class="section">
+      <h2>Our Team</h2>
+      <div class="team-container">
+          <div class="chef">
+              <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2020/06/10/9f399a5b7c544417a3e7cf1085441b0e_Michael+Anthony%2C+Executive+Chef_Credit+Liz+Clayman_1.jpg" alt="Chef 1">
+              <h3>Chef John Smith</h3>
+              <p>Head Chef</p>
+              <p>Chef John Smith brings over 9 years of culinary experience. With a passion for Italic Style and a commitment to using fresh, local ingredients.</p>
+              <div class="social-icons">
+                  <a routerLink="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a routerLink="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a routerLink="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+          </div>
+          <div class="chef">
+              <img src="https://www.fabfoodchicago.com/wp-content/uploads/2016/02/Sean-7519-823x1024.jpg" alt="Chef 2">
+              <h3>Chef Jane Doe</h3>
+              <p>Pastry Chef</p>
+              <p>Crafted a wide variety of pastries, desserts, and breads, focusing on seasonal ingredients and innovative flavor combinations.</p>
+              <div class="social-icons">
+                  <a routerLink="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a routerLink="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a routerLink="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+          </div>
+          <div class="chef">
+              <img src="https://th.bing.com/th/id/OIP.LotkR6EGey0JRYcm1AHizwHaJ4?rs=1&pid=ImgDetMain" alt="Chef 3">
+              <h3>Chef Mike Brown</h3>
+              <p>Sous Chef</p>
+              <p>Mike Brown is the right hand of our Head Chef, specializing in Indian Thali and Soups. With a keen eye for detail and a love for Indian cuisine.</p>
+              <div class="social-icons">
+                  <a routerLink="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a routerLink="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a routerLink="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+          </div>
+          <div class="chef">
+              <img src="https://i.pinimg.com/originals/db/71/c6/db71c6fcdd9807c93b57229965af32df.jpg" alt="Chef 4">
+              <h3>Chef Sarah Lee</h3>
+              <p>Line Cook</p>
+              <p>As a vital part of our kitchen team, Sarah Lee works tirelessly to prepare and cook dishes to perfection. With a focus on Japanese cuisine.</p>
+              <div class="social-icons">
+                  <a routerLink="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a routerLink="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a routerLink="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+      
+      <section id="branches" class="section">
+        <h2>Our Branches</h2>
+        <div class="branch-container">
+          <div class="branch">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120411.8429717013!2d76.91910705397208!3d11.051197505207142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857bc9b5ea9af%3A0x317ea10df48c4678!2sCoimbatore%20International%20Airport!5e1!3m2!1sen!2sin!4v1728728108679!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>#Location 1: Address and Details</p>
+          </div>
+          <div class="branch">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120411.8429717013!2d76.91910705397208!3d11.051197505207142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857bc9b5ea9af%3A0x317ea10df48c4678!2sCoimbatore%20International%20Airport!5e1!3m2!1sen!2sin!4v1728728108679!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>#Location 2: Address and Details</p>
+          </div>
+          <div class="branch">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120411.8429717013!2d76.91910705397208!3d11.051197505207142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857bc9b5ea9af%3A0x317ea10df48c4678!2sCoimbatore%20International%20Airport!5e1!3m2!1sen!2sin!4v1728728108679!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>#Location 3: Address and Details</p>
+          </div>
+        </div>
+      </section>
+  </body>

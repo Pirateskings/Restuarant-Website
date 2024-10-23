@@ -1,0 +1,240 @@
+body {
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("https://png.pngtree.com/background/20210710/original/pngtree-gourmet-minimalist-black-banner-picture-image_1053980.jpg");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  width:100%;
+  height:110vh;
+  justify-content: center;
+  align-items: center;
+}
+.center{
+        position: relative;
+        background:transparent;
+        box-shadow: 3px 4px 8px rgba(205, 178, 178, 0.711);
+        border-radius: 10px;
+        border: 2px;
+        padding: 10px;
+        transform: translateY(170px);
+        left: 500px;
+        width: 500px;
+        height:550px;
+}
+.con h1{
+    width: 300px;
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    top: 60px;
+    right: 250px;
+  }
+.con h1 i{
+    width: 35px;
+    color: rgb(51, 231, 51);
+    height: 25px;
+}
+.bar {
+    width: 25%;
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    display: flex; 
+    justify-content: flex-end;
+  }
+  
+  .bar ul {
+    display: flex; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .bar li {
+    list-style-type: none;
+    margin-left: 10px; 
+  }
+  
+  .bar a {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: inline-flex; 
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    transform: translateX(-30px);
+    border-radius: 25px;
+    background: transparent;
+    transition: background 0.5s ease;
+  }
+  .bar i{
+    transform: translateX(-10px);
+  }
+  .bar a:hover {
+    background: #007bff;
+  }
+.center-text {
+    padding: 20px;
+}
+.signlink a{
+    text-decoration: none;
+}
+.center h1 {
+    text-align: center;
+    font-family: "Lugrasimo",cursive;
+    margin-bottom: 20px;
+    color:white;
+}
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.txt-field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+    color: black;
+    font-weight: 900;
+}
+.txt-field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+.forget{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+.forget a{
+    text-decoration: none;
+    color:white;
+}
+.forget a:hover{
+    width: 100%;
+    color: rgb(34, 255, 34);
+}
+.txt-field input::placeholder{
+    color: #f4f0f0;
+    font-weight: 600;
+    letter-spacing: 3px;
+    gap:initial;
+}
+.txt-field i{
+    position:absolute;
+    top: 30%;
+    left: -10%;
+    color: rgb(235, 16, 16);
+    font-size:20px;
+    font-weight: 600 ;
+}
+.txt-field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label {
+    top: -5px;
+    color: #2691d9;
+}
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before {
+    width: 100%;
+}
+.pass {
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass:hover {
+    text-decoration: underline;
+}
+button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:1s;
+}
+button i{
+    color:white;
+    letter-spacing: 10px;
+}
+button:hover {
+    background: #2691d9;
+    color: #e9f4fb;
+}
+.signlink {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+.signlink a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.signlink a:hover {
+    color: #1eff17;
+}
+form{
+    background: transparent;
+}
+.icon{
+    margin-top: 15px;
+    display:inline-block;
+}
+.icon span{
+  
+    border: 1px solid black;
+    padding:5px 15px;
+    padding-right: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    color: rgba(244, 247, 250, 0.795);
+     border-radius: 5px;
+    line-height: 30px;
+    background: rgba(255, 255, 255, 0.164);
+    transition: background 0.5s ease;
+}
+.icon span:hover{
+background:#000000;   
+color:  #e9f4fb;    
+}    
+.icon i{
+letter-spacing: 10px;
+}
+.google{
+    position: relative;
+    left: 200px;
+    bottom: 30px;
+}
+.google a,.facebook a{
+text-decoration: none;
+color:rgba(244, 247, 250, 0.795) ;
+}
+.google i:hover,.facebook i:hover{
+    color:#215cff;
+}

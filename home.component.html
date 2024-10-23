@@ -1,0 +1,54 @@
+
+<body>
+    <div class="back">
+    <div class="home">
+        <hr>
+    <div class="logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/284/681/non_2x/restaurant-logo-1-png.png" alt="logo">
+    </div>
+    <a routerLink="/menu" routerLinkActive="active"><h1>King Of Taste</h1></a>
+    <div class="wel">
+        <h2 class="animate__animated animate__fadeInLeft animate__slower 5s animate__repeat-3">Welcome to Our Restaurant</h2>
+        <h4 class="animate__animated animate__fadeInRight animate__slower 5s animate__repeat-3">Explore Our Menu</h4>
+        <div class="btn">
+        <a routerLink="/menu" routerActiveLink="active"><button class="animate__animated animate__fadeInDown">Explore us</button></a>
+        </div>
+    </div> </div>
+    <div class="back1">
+        <div class="arr">
+           <img src="https://img.freepik.com/premium-photo/gazpacho-soup-glas-tomato-soup-with-onion-paprika-parsley-italian-cuisine-top-view-black-background-free-space-text_187166-45407.jpg" alt="no image" class="img1">
+           <img src="https://goldfishseafoodmarket.com/cdn/shop/products/atlanticsalmon-1600.jpg?v=1673771297" alt="no image" class="img2">
+            <img src="https://i.pinimg.com/originals/1b/f5/67/1bf56793f862bf44beaeaedca07422e8.jpg" alt="no image" class="img3">
+          <img src="https://glebekitchen.com/wp-content/uploads/2018/04/misoramenfront-1.jpg" alt="no image" class="img4">
+           <img src="https://img.freepik.com/premium-photo/pakistani-indian-traditional-curry_988987-26043.jpg" alt="no image" class="img5">
+         <img src="https://th.bing.com/th/id/R.803a330b0e5d5dce678e28a7a1b89d2e?rik=oh7%2b%2b0c8lh%2bg3A&riu=http%3a%2f%2fdigtoknow.com%2fwp-content%2fuploads%2f2016%2f01%2fDessert.jpg&ehk=e222QuNtfcfjM3s63mdiVVT0lZd7EyGx%2bT2%2bbnBc95o%3d&risl=&pid=ImgRaw&r=0" alt="no image" class="img6">
+         <img src="https://assets3.thrillist.com/v1/image/2858791/1584x1194/scale;webp=auto;jpeg_quality=60;progressive.jpg" alt="" class="img7">
+        <img src="https://png.pngtree.com/png-clipart/20220911/original/pngtree-chef-restaurant-logo-png-image_8538757.png" alt="" class="img8">
+         <img src="https://www.tasteofhome.com/wp-content/uploads/2020/03/Berry-Cool-Cream-and-Pretzel-Pie_EXPS_TOHJJ20_242812_E02_05_6b.jpg" alt="" class="img9">
+        </div>
+    </div>
+     <div class="offer">
+        <img src="https://img.freepik.com/premium-psd/food-banner-post-template_150331-32.jpg" alt="no image" class="off1">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/special-food-menu-design-template-0292b55cc1d7cbbb719211e387a16bcb_screen.jpg?ts=1682067172" alt="no image" class="off2">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/restaurant-offer-flyer-template-7c1a9496bc854ae325a679e7763bdf52_screen.jpg?ts=1502563735" alt="no image" class="off3">
+        <img src="https://thumbs.dreamstime.com/b/special-offer-discount-black-frame-white-rectangle-paper-cut-style-outline-gift-box-shape-bow-geometric-shapes-vector-220335333.jpg" alt="offer box" class="box">
+      </div> <div class="track">
+        <img src="https://th.bing.com/th/id/OIP.Dk6LPWBBWlR6hggGqnbRKwHaHT?rs=1&pid=ImgDetMain" alt="no image" class="off4">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/healthy-eating-habits-restaurant-flyer-templa-design-template-6e3d2583f7a4cc5036ceb28fef145981.jpg?ts=1637023195" alt="no image" class="off5">
+ <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/restaurant-flyer-design-template-84c8cc66389f7ed438f6aa17bd9b461f_screen.jpg?ts=1706259628" alt="no image" class="off6">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/restaurant-menu-design-template-6fd94ede825af2a943c32699ea52526a_screen.jpg?ts=1708966909" alt="no image" class="off7">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/hot-%26-delecious-ramen-design-template-b7372b7077bba08158ddca884b6d5315_screen.jpg?ts=1699445087" alt="no image" class="off8">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/special-dessert-offer-design-template-148878cb225725ebef60416e6415d3b0_screen.jpg?ts=1685437506" alt="no image" class="off9">
+ <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/special-dessert-ads-design-template-211340df5cfa402bc0f33152b18fb2d7_screen.jpg?ts=1685687123" alt="no image" class="off10">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cake-food-menu-design-template-dbdda1ae9b069c8eef39b45c7bccfcf8_screen.jpg?ts=1691056963" alt="no image" class="off11">
+        </div>
+            <div class="container">
+              <div class="slide" *ngFor="let image of giftimage; let i=index">
+                <div class="tk">
+                  <img [src]="image.image1" alt="slide image" class="field">
+                  <img [src]="image.image2" alt="slide image" class="field1">
+                </div>
+              </div>
+            </div>
+    </div>
+</body>

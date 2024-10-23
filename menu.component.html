@@ -1,0 +1,69 @@
+<body>
+<div class="menu-container">
+  <div class="menu-background"></div>
+  <div class="menu-content">
+    <div class="logo">
+      <img src="https://th.bing.com/th/id/OIP.WnO8-cH2qP_9P1_Hzz_2jAHaD9?rs=1&pid=ImgDetMain" alt="no image">
+     
+    </div>
+    <h1 class="star">Starters</h1>
+    <div class="fornt">
+    <div class="starter">
+    <div class="menu-items" *ngFor="let item of menuItems;let i = index">
+            <div class="menu-img">
+        <img [src]="item.image" alt="No-image">
+        <h3>{{item.name}}</h3>
+        <h4>{{item.price}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.amt | currency:"INR":"symbol"}}</h4>
+        <a routerLink="/menu" routerLinkActive="active" (click)="toggleStarters(i)"><h5>Read More</h5></a>
+      <div class="backend" *ngIf="backendVisibleStarters[i]">
+          <p>More Information About  <br> {{item.name}}...</p>
+            <ul>
+              <li *ngFor="let ingredient of item.ingredients" >{{ingredient.name}} - {{ingredient.quantity}}</li>
+            </ul>
+          <button type="submit" (click)="closeToggleStarters(i)">X</button>
+      </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <h1 class="star">Main Dish</h1>
+    <div class="fornt">
+    <div class="starter">
+    <div class="menu-items" *ngFor="let item of menuItems;let i=index">
+            <div class="menu-img">
+        <img [src]="item.image1" alt="No-image">
+        <h3>{{item.name1}}</h3>
+        <h4>{{item.price1}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.amt1 | currency:"INR":"symbol"}}</h4>
+        <a routerLink="/menu" routerLinkActive="active" (click)="toggleMainDishes(i)"><h5>Read More</h5></a>
+        <div class="backend" *ngIf="backendVisibleMainDishes[i]">
+            <p>More Information About  <br> {{item.name}}...</p>
+              <ul>
+                <li *ngFor="let ingredient of item.ingredients" >{{ingredient.name}} - {{ingredient.quantity}}</li>
+              </ul>
+            <button type="submit" (click)="closeToggleMainDishes(i)">X</button>
+        </div>
+       </div>
+    </div>
+    </div>
+    </div>
+    <h1 class="star">Drinks</h1>
+    <div class="starter">
+    <div class="menu-items" *ngFor="let item of menuItems;let i=index">
+            <div class="menu-img">
+        <img [src]="item.image2" alt="No-image">
+        <h3>{{item.name2}}</h3>
+        <h4>{{item.price2}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.amt2 | currency:"INR":"symbol"}}</h4>
+        <a routerLink="/menu" routerLinkActive="active" (click)="toggleDrinks(i)"><h5>Read More</h5></a>
+        <div class="backend" *ngIf="backendVisibleDrinks[i]">
+            <p>More Information About  <br> {{item.name}}...</p>
+              <ul>
+                <li *ngFor="let ingredient of item.ingredients" >{{ingredient.name}} - {{ingredient.quantity}}</li>
+              </ul>
+            <button type="submit" (click)="closeToggleDrinks(i)">X</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
