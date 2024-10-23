@@ -81,7 +81,7 @@ This project is licensed under the MIT License.
 For any inquiries or feedback, please contact me at:
 
 Email: ram040029@gmail.comm
-GitHub: Priteskings
+GitHub: [Priteskings](https://github.com/Pirateskings)
 
 ### Explanation of Sections
 
